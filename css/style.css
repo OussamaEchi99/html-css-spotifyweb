@@ -6,12 +6,19 @@
 }
 
 /* COMMON */
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
 li{
-    list-style-type: none;
+    list-style-type: none;;
 }
 
 a{
     text-decoration: none;
+    color: #656565;
+    font-weight: bold;
 }
 
 /* MAIN */
@@ -31,14 +38,69 @@ aside{
     background-color: #000000;
 }
 
+.nav{
+    width: 85%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav *{
+    margin: 4px 0;
+}
+
 .logo{
     width: 100%;
     height: 100px;
+    margin: 0;
 }
 
 .logo img{
-    width: 60%;
+    width: 65%;
     height: 100px;
+}
+.menu-home-search{
+    margin-bottom: 30px;
+}
+
+.menu-home-search img, .useraccount-download img{
+    width: 13%;
+    vertical-align: middle;
+}
+
+.bookshelf{
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.new-list{
+    overflow-y: auto;
+    height: 100%;
+}
+
+.bookshelf ul li{
+    margin: 20px 0;
+}
+
+.creaplaylist-btn{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.creaplaylist-btn i{
+    background: #a3a3a3;
+    padding: 7px 10px;
+    font-size: 30px;
+    color: black;
+    margin-right: 15px;
+}
+
+.useraccount-download{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 /* MAIN-SECTION */
@@ -56,8 +118,6 @@ aside{
     top: 0;
     right: 0;
 }
-
-
 
 /* FOOTER */
 footer{
