@@ -226,6 +226,7 @@ footer{
     background-color: #282828;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 /* SELECT-ALBUM-SECTION */
@@ -274,4 +275,60 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+.play-section-btn a{
+    font-size: 20px;
+    color: white;
+}
+
+#play-btn{
+    font-size: 40px;
+}
+
+.time-audio{
+    display: flex;
+    align-items: center;
+}
+
+.full-line{
+    width: 475px;
+    height: 5px;
+    margin: 0 40px;
+    background-color: #656565;
+    border-radius: 20px;
+}
+
+.line-time{
+    background-color: #b9b9b9;
+    width: 25%;
+    height: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+/* AUDIO-SECTION */
+.audio-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+}
+
+.full-line-audio{
+    width: 175px;
+    height: 5px;
+    /* margin: 0 40px; */
+    background-color: #656565;
+    border-radius: 20px;
+}
+
+.line-time-audio{
+    background-color: #b9b9b9;
+    width: 15%;
+    height: 100%;
+    display: block;
+    border-radius: 20px;
 }
