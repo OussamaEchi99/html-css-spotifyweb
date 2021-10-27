@@ -117,7 +117,14 @@ aside{
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     right: 0;
+    position: fixed;
 }
+
+.upgrade-btn a{
+    padding: 10px 20px;
+    border: 1px solid #fcfcfc;
+}
+
 
 /* FOOTER */
 footer{
