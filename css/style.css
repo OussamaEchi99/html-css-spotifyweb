@@ -111,19 +111,61 @@ aside{
     background-color: #141922;
 }
 
+/* UPGRADE-BTN */
 .upgrade-btn{
-    width: 100%;
+    width: calc(100% - 300px);
     height: 100px;
     background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
     top: 0;
     right: 0;
-    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .upgrade-btn a{
-    padding: 10px 20px;
+    padding: 12px 40px;
     border: 1px solid #fcfcfc;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 0 10px;
 }
+
+/* MAIN-CONTENT */
+.main-content{
+    padding-top: 120px;
+    width: 95%;
+    margin: auto;
+    background-color: pink;
+}
+
+.main-content-nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.main-content-nav li{
+    margin: 0 10px;
+}
+
+.main-content-nav li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+
+/* .main-content-nav li a p{
+    width: 10px;
+    height: 1px;
+    border-bottom: 1px solid greenyellow;
+    display: none;
+}
+
+.main-content-nav li a p:hover{
+    display: inline;
+} */
 
 
 /* FOOTER */
