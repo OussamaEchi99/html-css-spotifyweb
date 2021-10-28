@@ -25,9 +25,6 @@ a{
 main{
     width: 100%;
     height: calc(100vh - 100px);
-
-
-    background-color: chocolate;
 }
 
 /* ASIDE */
@@ -59,6 +56,7 @@ aside{
 .logo img{
     width: 65%;
     height: 100px;
+    color: #d2d2d2;
 }
 .menu-home-search{
     margin-bottom: 30px;
@@ -103,6 +101,43 @@ aside{
     justify-content: flex-end;
 }
 
+.useraccount-download span{
+    margin: 0 7px;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #656565;
+}
+
+.account img{
+    background-color: #808080;
+    border-radius: 50%;
+}
+
+.download img{
+    width: 10%;
+}
+
+@media screen and (max-width: 600px) {
+    aside{
+        width: 50px;
+    }
+    
+    .nav span, .bookshelf, .line{
+        display: none;
+    }
+    
+    .menu-home-search{
+        flex-grow: 1;
+    }
+
+    .menu-home-search img, .useraccount-download img{
+        width: 80%;
+    }    
+
+}
 /* MAIN-SECTION */
 .main-section{
     width: calc(100% - 300px);
@@ -111,6 +146,11 @@ aside{
     background-color: #141922;
 }
 
+@media screen and (max-width: 600px) {
+    .main-section{
+        width: calc(100% - 50px);
+    }
+}
 /* UPGRADE-BTN */
 .upgrade-btn{
     width: calc(100% - 300px);
@@ -130,6 +170,12 @@ aside{
     border-radius: 20px;
     font-size: 12px;
     margin: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .upgrade-btn{
+        width: calc(100% - 50px);
+    }
 }
 
 /* MAIN-CONTENT */
@@ -202,6 +248,46 @@ aside{
     width: 100%;
 }
 
+@media screen and (max-width: 1099px) {
+    .albums-section{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .album-content{
+        width: calc((100% / 4) - 10px);
+    }
+
+    .albums-section > *{
+        margin: 10px 5px;
+    }
+
+    .no-margin{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .albums-section{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .album-content{
+        width: calc((100% / 2) - 10px);
+    }
+
+    .albums-section > *{
+        margin: 10px 5px;
+    }
+
+    #no-margin{
+        margin-right: 5px;
+    }
+}
+
 /* SUGGESTED-ALBUMS / ARTIST */
 .suggested-albums .albums-section,
 .artist .albums-section{
@@ -249,6 +335,10 @@ footer{
 
 .album-name-like img{
     width: 60px;
+}
+
+.album-name{
+    margin: 0 10px;
 }
 
 .like-share-section{
